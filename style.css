@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(123, 165, 201, 0.444);
+}
+
+#sketch-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    background-color: white;
+    margin: 100px auto 50px auto;
+    box-shadow: 10px 10px rgba(118, 118, 118, 0.748);
+}
+
+.cell {
+    border: 1px solid whitesmoke;
+}
+
+#slider-container {
+    margin: 0 auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    width: 100%;
+    background: rgb(76, 160, 77);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider-value {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: pink;
+    cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: pink;
+    cursor: pointer;
+}
